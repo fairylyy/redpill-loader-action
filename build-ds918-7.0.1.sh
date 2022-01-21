@@ -30,11 +30,10 @@ sed -i -e 's\0x0001\0x0002\g' -e 's\0x46f4\0x0002\g' -e 's\1234XXX123\1230LWN003
 cp ${root}/user_config.DS918+.json ./user_config.json
 sudo ./ext-manager.sh add 'https://raw.githubusercontent.com/pocopico/rp-ext/master/mpt3sas/rpext-index.json'
 sudo ./ext-manager.sh add 'https://raw.githubusercontent.com/pocopico/rp-ext/master/ixgbe/rpext-index.json'
+sudo ./ext-manager.sh add 'https://raw.githubusercontent.com/pocopico/rp-ext/master/ixgbevf/rpext-index.json'
 sudo ./ext-manager.sh add 'https://raw.githubusercontent.com/pocopico/rp-ext/master/igb/rpext-index.json'
-sudo ./ext-manager.sh add 'https://raw.githubusercontent.com/pocopico/rp-ext/master/r8125/rpext-index.json'
 sudo ./ext-manager.sh add 'https://raw.githubusercontent.com/pocopico/rp-ext/master/e1000/rpext-index.json'
 sudo ./ext-manager.sh add 'https://raw.githubusercontent.com/pocopico/rp-ext/master/vmxnet3/rpext-index.json'
-sudo ./ext-manager.sh add 'https://raw.githubusercontent.com/pocopico/rp-ext/master/vmw_pvscsi/rpext-index.json'
 sudo ./build-loader.sh 'DS918+' '7.0.1-42218'
 mv images/redpill-DS918+_7.0.1-4221*.img ${root}/output/
 cd ${root}
