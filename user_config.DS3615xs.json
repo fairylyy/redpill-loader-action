@@ -12,5 +12,14 @@
     "supportsystemperature": "no",
     "supportsystempwarning": "no"
   },
-  "ramdisk_copy": {}
+  "ramdisk_copy": {},
+  "extensions": [
+    "thethorgroup.virtio",
+    "pocopico.mpt3sas",
+    "pocopico.ixgbe",
+    "pocopico.igb",
+    "pocopico.r8125",
+    "pocopico.vmxnet3",
+    "pocopico.e1000"    
+  ]
 }
