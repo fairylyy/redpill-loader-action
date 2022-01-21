@@ -6,7 +6,6 @@
     "mac1": "MAC1ADDRESS",
     "mac2": "MAC2ADDRESS",
     "netif_num" : "2"
-    
   },
   "synoinfo": {
     "supportsystemperature": "no",
