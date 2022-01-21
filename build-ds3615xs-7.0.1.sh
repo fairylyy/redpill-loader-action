@@ -35,6 +35,7 @@ sudo ./ext-manager.sh add 'https://raw.githubusercontent.com/pocopico/rp-ext/mas
 sudo ./ext-manager.sh add 'https://raw.githubusercontent.com/pocopico/rp-ext/master/r8125/rpext-index.json'
 sudo ./ext-manager.sh add 'https://raw.githubusercontent.com/pocopico/rp-ext/master/e1000/rpext-index.json'
 sudo ./ext-manager.sh add 'https://raw.githubusercontent.com/pocopico/rp-ext/master/vmxnet3/rpext-index.json'
+sudo ./ext-manager.sh add 'https://raw.githubusercontent.com/pocopico/rp-ext/master/vmw_pvscsi/rpext-index.json'
 sudo ./build-loader.sh 'DS3615xs' '7.0.1-42218'
 mv images/redpill-DS3615xs_7.0.1-4221*.img ${root}/output/
 cd ${root}
