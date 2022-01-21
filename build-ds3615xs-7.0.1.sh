@@ -27,10 +27,13 @@ cd ..
 
 # build redpill-load
 cd redpill-load
-sed -i -e 's\0x0001\0x0002\g' -e 's\0x46f4\0x0002\g' -e 's\1234XXX123\1230LWN003637\g' -e 's\MAC1ADDRESS\245EBE0299E8\g' -e 's\MAC2ADDRESS\001B21BC18BB\g' ${root}/user_config.DS3615xs.json
+sed -i -e 's\1234XXX123\1230LWN003637\g' -e 's\MAC1ADDRESS\245EBE0299E8\g' -e 's\MAC2ADDRESS\001B21BC18BB\g' ${root}/user_config.DS3615xs.json
 cp -f ${root}/user_config.DS3615xs.json ./user_config.json
 sudo ./ext-manager.sh add 'https://raw.githubusercontent.com/pocopico/rp-ext/master/mpt3sas/rpext-index.json'
 sudo ./ext-manager.sh add 'https://raw.githubusercontent.com/pocopico/rp-ext/master/ixgbe/rpext-index.json'
+sudo ./ext-manager.sh add 'https://raw.githubusercontent.com/pocopico/rp-ext/master/ixgbevf/rpext-index.json'
+sudo ./ext-manager.sh add 'https://raw.githubusercontent.com/pocopico/rp-ext/master/igb/rpext-index.json'
+sudo ./ext-manager.sh add 'https://raw.githubusercontent.com/pocopico/rp-ext/master/e1000/rpext-index.json'
 sudo ./ext-manager.sh add 'https://raw.githubusercontent.com/pocopico/rp-ext/master/vmxnet3/rpext-index.json'
 sudo ./build-loader.sh 'DS3615xs' '7.0.1-42218'
 mv images/redpill-DS3615xs_7.0.1-4221*.img ${root}/output/
