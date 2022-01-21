@@ -10,9 +10,9 @@
   },
   "synoinfo": {
     "supportsystemperature": "no",
-    "supportsystempwarning": "no"
+    "supportsystempwarning": "no",
+    "maxlanport": "3"
   },
   "ramdisk_copy": {},
-  "extensions": [
-  ]
+  "extensions": []
 }
