@@ -30,7 +30,7 @@ cd redpill-load
 sed -i -e 's\1234XXX123\1560ODN003374\g' -e 's\MAC1ADDRESS\245EBE0299E8\g' -e 's\MAC2ADDRESS\001B21BC18BB\g' ${root}/user_config.DS3615xs.json
 cp -f ${root}/user_config.DS3615xs.json ./user_config.json
 sudo ./ext-manager.sh add 'https://raw.githubusercontent.com/pocopico/rp-ext/master/mpt3sas/rpext-index.json'
-sudo ./ext-manager.sh add 'https://raw.githubusercontent.com/pocopico/rp-ext/master/ixgbe/rpext-index.json'
+sudo ./ext-manager.sh add 'https://raw.githubusercontent.com/fairylyy/redpill-loader-action/main/ixgbe-rpext-index.json'
 sudo ./ext-manager.sh add 'https://raw.githubusercontent.com/pocopico/rp-ext/master/r8125/rpext-index.json'
 sudo ./ext-manager.sh add 'https://raw.githubusercontent.com/pocopico/rp-ext/master/igb/rpext-index.json'
 sudo ./ext-manager.sh add 'https://raw.githubusercontent.com/pocopico/rp-ext/master/e1000/rpext-index.json'
