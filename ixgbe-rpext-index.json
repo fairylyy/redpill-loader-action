@@ -1,6 +1,6 @@
 {
   "id": "pocopico.ixgbe",
-  "url": "https://raw.githubusercontent.com/pocopico/rp-ext/master/ixgbe/rpext-index.json",
+  "url": "https://raw.githubusercontent.com/fairylyy/redpill-loader-action/main/ixgbe-rpext-index.json",
   "info": {
     "name": "ixgbe",
     "description": "Adds Intel(R) 10GbE PCI Express Linux Network Driver Support",
