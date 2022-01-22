@@ -12,6 +12,12 @@ jobs:
         id: checkout
         with:
           submodules: 'true'
+          
+      - name: Build DS3617xs 7.0.1
+        id: build-ds3617xs-70
+        run: |
+            bash build-ds3617xs-7.0.1.sh
+            
       - name: Build DS3615xs 7.0.1
         id: build-ds3615xs-70
         run: |
@@ -26,7 +32,11 @@ jobs:
         with:
           name: redpill-DS3615xs_7.0.1-loader
           path: output/redpill-DS3615xs_7.0*.img
-
+      - name: Archive DS3617xs 7.0.1 loader image
+        uses: actions/upload-artifact@v2
+        with:
+          name: redpill-DS3617xs_7.0.1-loader
+          path: output/redpill-DS3617xs_7.0*.img
 
       - name: Archive DS918+ 7.0.1 loader image
         uses: actions/upload-artifact@v2
